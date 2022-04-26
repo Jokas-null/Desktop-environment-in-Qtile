@@ -2,27 +2,31 @@ from libqtile import widget
 from libqtile.config import Screen
 from libqtile import widget, bar
 
+def separator():
+    return widget.Sep(
+        background = '#73a832',
+        linewidth = 0,
+        padding = 6
+    )
+
 screens = [
     Screen(
         top=bar.Bar(
             [
                 widget.GroupBox(
-                    background = '#ff9500'
+                    #background = '#ff9500'
+                    active = '#bd8a13',
+                    highlight_method='block',
+                    borderwidth = 3,
+                    center_aligned =  True
                 ),
 
-                widget.Sep(
-                    background = '#73a832'
-                ),
+                separator(),
 
                 widget.WindowName(
-                    background = '#00ff6a'
+                    #background = '#00ff6a'
                 ),
-                widget.Chord(
-                    chords_colors={
-                        "launch": ("#ff0000", "#ffffff"),
-                    },
-                    name_transform=lambda name: name.upper(),
-                ),
+                widget.Systray(),
                 widget.CPUGraph(
                     type = 'box',
                     background = '#000000',
