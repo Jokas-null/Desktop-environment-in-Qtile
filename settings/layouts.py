@@ -16,7 +16,6 @@ layouts = [
     #layout.Zoomy(),definitivamente no
 ]
 
-
 floating_layout = layout.Floating(
     float_rules=[
         *layout.Floating.default_float_rules,
