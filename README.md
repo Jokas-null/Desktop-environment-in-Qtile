@@ -27,7 +27,7 @@ Clone this repository and copy my configs:
 
 ```bash
 git clone https://github.com/Jokas-null/Qtile-Config.git
-cp -r Qtile-Config/.config/qtile ~/.config
+cp -r Qtile-Config ~/.config
 ```
 ## Startup  🏁
 
