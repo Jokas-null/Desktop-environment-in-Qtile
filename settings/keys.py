@@ -43,4 +43,7 @@ keys = [
     # Custom keys for programs
     Key([mod], "Return", lazy.spawn("kitty"), desc="Launch terminal"),
     Key([mod], "f", lazy.spawn("firefox"), desc="Lauch Firefox"),
+    Key([mod], "m", lazy.spawn("rofi -show run"), desc="Lauch rofi menu"),
+    Key([mod], "b", lazy.spawn("burpsuite"), desc="Lauch burpsuite"),
+    Key([mod], "e", lazy.spawn("thunar"), desc="Lauch file explorer"),
 ]
