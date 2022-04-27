@@ -29,3 +29,23 @@ Clone this repository and copy my configs:
 git clone https://github.com/Jokas-null/Qtile-Config.git
 cp -r dotfiles/.config/qtile ~/.config
 ```
+## Startup  🏁
+
+One of the most important functions in the config is the startup function located at ```config.py```.
+
+``` python
+@hook.subscribe.startup_once
+def autostart():
+    home = os.path.expanduser('~')
+    subprocess.Popen([home + '/.config/qtile/autostart.sh'])
+```
+
+If you want to change *autostart* programs, open  ```./autostart.sh```.
+
+```bash
+#!/bin/sh
+
+nitrogen --restore &
+
+picom --experimental-backends &
+```
