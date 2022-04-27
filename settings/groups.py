@@ -2,8 +2,20 @@ from libqtile.config import Key, Group
 from libqtile.command import lazy
 from .keys import mod, keys
 
+# Get the icons at https://www.nerdfonts.com/cheat-sheet
+#Icons
+#nf-linux-archlinux
+#nf-fa-firefox
+#nf-dev-terminal
+#nf-custom-folder_open
+#nf-dev-rasberry_pi
+#nf-fae-telegram
+#nf-dev-github_badge
+#nf-dev-linux
+#nf-dev-netbeans
+
 groups = [Group(i) for i in [
-    " uno  ", " dos  ", " tres  ", " four  ", " five ", " six  ", " sev  ", " eigh  ", " nine  ",
+    "  ", "  ", "  ", "  ", "  ", "  ", "  ", "  ", "  ",
 ]]
 
 for i, group in enumerate(groups):
