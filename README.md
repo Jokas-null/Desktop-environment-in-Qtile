@@ -1,5 +1,5 @@
 # Qtile-Config
-My qtile config for arch linux.
+My qtile.
 
 # Screenshots 🖥️
 
