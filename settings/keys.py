@@ -41,7 +41,7 @@ keys = [
     Key([mod], "r", lazy.spawncmd(), desc="Spawn a command using a prompt widget"),
 
     # Custom keys for programs
-    Key([mod], "Return", lazy.spawn("kitty"), desc="Launch terminal"),
+    Key([mod], "Return", lazy.spawn("gnome-terminal"), desc="Launch terminal"),
     Key([mod], "f", lazy.spawn("firefox"), desc="Lauch Firefox"),
     Key([mod], "m", lazy.spawn("rofi -show run"), desc="Lauch rofi menu"),
     Key([mod], "b", lazy.spawn("burpsuite"), desc="Lauch burpsuite"),

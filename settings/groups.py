@@ -15,7 +15,7 @@ from .keys import mod, keys
 #nf-dev-netbeans
 
 groups = [Group(i) for i in [
-    "  ", "  ", "  ", "  ", "  ", "  ", "  ", "  ", "  ",
+    "  ", "  ", "  ", "  ", "  ", "  ", "  ", "  ", "  ",
 ]]
 
 for i, group in enumerate(groups):
